@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Escolar Futurista</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #111111;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      text-align: center;
+      background-color: #222222;
+      padding: 15px;
+    }
+
+    nav button {
+      background-color: #00ff6e;
+      color: rgb(1, 0, 0);
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00c6ff;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav button:hover {
+      transform: scale(1.1);
+      background-color: #0072ff;
+      box-shadow: 0 0 20px #0072ff;
+    }
+
+    section {
+      padding: 30px;
+      border-bottom: 1px solid #333;
+      text-align: center;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #00c6ff;
+      transition: transform 0.3s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+    }
+
+    form input, form button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: none;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    form button {
+      background-color: #00c6ff;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00c6ff;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #0072ff;
+      box-shadow: 0 0 20px #0072ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 Portal Escolar Digital 
+        alumno Flores Jose 3°1 </h1>
+    <p>
+
+Esta página ha sido creada especialmente para los alumnos del último año del curso 3°1 del CENS 492, como un espacio digital de encuentro, aprendizaje y colaboración. Aquí podrán consultar materiales, subir trabajos y mantenerse organizados en cada asignatura. Es una herramienta pensada para acompañar el cierre de esta etapa educativa con responsabilidad, compromiso y creatividad. Usémosla con respeto y dedicación, como reflejo del esfuerzo que cada uno pone en su formación.</p>
+  </header>
+
+  <nav>
+  <button onclick="location.href='comunicacion.html'">Comunicación y Cultura</button>
+  <button onclick="location.href='ingles.html'">Inglés</button>
+  <button onclick="location.href='musica.html'">Música</button>
+  <button onclick="location.href='lengua.html'">Lengua y Literatura</button>
+  <button onclick="location.href='quimica.html'">Química</button>
+  <button onclick="location.href='filosofia.html'">Filosofía</button>
+  <button onclick="location.href='problematica.html'">Problemática Social</button>
+  <button onclick="location.href='informatica.html'">Informática</button>
+  <button onclick="location.href='matematicas.html'">Matemáticas</button>
+</nav>
+
+  <!-- Ejemplo de sección por materia -->
+  <section id="ingles">
+    <h4>📘 asignaturas </h4>
+    <img src="imagenes/Captura de pantalla 2025-09-19 125725.png">
+    <form action="https://formsubmit.co/TU_CORREO@mail.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="file" name="archivo" required>
+      <button type="submit">Subir trabajo</button>
+    </form>
+    <p>📄 Aquí se mostrarán los trabajos subidos por los alumnos.</p>
+  </section>
+
+  <!-- Repetí esta estructura para cada materia cambiando el ID, imagen y texto -->
+
+  <footer>
+    <p>&copy; 2025 Escuela Digital | Aprendizaje Colaborativo</p>
+  </footer>
+</body>
+</html>
